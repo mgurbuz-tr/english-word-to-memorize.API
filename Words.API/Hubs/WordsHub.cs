@@ -9,6 +9,11 @@ namespace Words.API.Hubs
         {
             await Clients.All.SendAsync("word", "wind", "rüzgar");
         }
-       
+
+        public async Task GetNextWord()
+        {
+            await Clients.All.SendAsync("word", "grass", "çim");
+        }
+
     }
 }
